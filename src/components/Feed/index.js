@@ -13,7 +13,7 @@ const Feed = ({ roupas, adicionarCarrinho }) => {
       
         {roupas.map((item) => (
           <li key={item.id}>
-            {item.modelo} | {item.preco}
+            {item.modelo}
             <Button variant="success" size="sm" onClick={() => adicionarCarrinho(item)}>Comprar</Button>
           </li>
         ))}
