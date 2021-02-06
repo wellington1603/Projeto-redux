@@ -5,6 +5,8 @@ import { bindActionCreators } from "redux";
 import Button from 'react-bootstrap/Button'
 //  colocando nossas Actions dentro de um Objeto
 import * as CourseActions from "../../store/actions/actions";
+import {Row, Col} from "reactstrap"
+import "./index.css"
 
 const Sidebar = ({ modules, toggleLesson }) => {
   return (
@@ -14,13 +16,13 @@ const Sidebar = ({ modules, toggleLesson }) => {
           <strong>{module.title}</strong>
           
             {module.lessons.map((lesson) => (
-               <div key={lesson.id}>
-               
-                {/* define uma licao e modulo como ativa.  */}
-                <Button variant="primary" size="sm" onClick={() => toggleLesson(module, lesson)}>
-                {lesson.title}
-                </Button>
-
+               <div key={lesson.id}>               
+                      <div className="botao">
+                        {/* define uma licao e modulo como ativa.  */}
+                        <Button variant="primary" size="sm" onClick={() => toggleLesson(module, lesson)}>
+                        {lesson.title}
+                        </Button>
+                      </div>
               </div>
             ))}
           

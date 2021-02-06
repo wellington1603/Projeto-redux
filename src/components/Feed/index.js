@@ -9,7 +9,7 @@ import * as CarrinhoAction from "../../store/actions/actions";
 const Feed = ({ roupas, adicionarCarrinho }) => {
   return (
     <section>
-      <h3>Comprar Guitarra</h3>
+      <h1>Comprar Guitarra</h1>
       
         {roupas.map((item) => (
           <li key={item.id}>

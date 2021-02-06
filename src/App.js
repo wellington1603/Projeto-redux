@@ -7,11 +7,12 @@ import Sidebar from './components/Sidebar'
 import Video from './components/Video'
 import Feed from './components/Feed'
 import CarShop from './components/CarShop'
+import "./app.css"
 
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
        
      
         <Provider store={ store }>
